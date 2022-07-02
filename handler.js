@@ -56,7 +56,7 @@ function IsNumber(num){
     if((newNum<=101)&&(newNum>=1)){
       return true
     }
-    else return false;
+    
   }
   catch{
     return false
