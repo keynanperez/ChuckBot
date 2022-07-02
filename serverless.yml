@@ -1,0 +1,27 @@
+org: symbolicflea
+console: true
+service: chuk-bot
+
+provider:
+
+  name: aws
+
+  runtime: nodejs16.x
+
+  region: eu-west-1
+
+functions:
+
+  chuk-bot:
+
+    handler: handler.chukbot
+
+    events:
+
+      - http:
+
+          path: chuk-bot
+
+          method: post
+
+          cors: true
